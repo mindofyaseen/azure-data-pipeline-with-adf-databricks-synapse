@@ -70,26 +70,35 @@ The project follows the **Medallion Architecture**, consisting of three layers:
 
 ---
 
+
 ## Project Structure
 
-azure-end-to-end-data-engineering-project/
-│
-├── datasets/
-│ └── *.csv # Sample dataset files
-│
-├── scripts/
-│ ├── adf_pipeline.json # ADF pipeline export
-│ ├── databricks_transformations.py
-│ ├── pyspark_cleaning_script.py
-│ └── synapse_queries.sql
-│
-├── architecture/
-│ └── project_architecture.png # Architecture diagram
-│
-├── documentation/
-│ └── project_report.md # Detailed project documentation
-│
-└── README.md
+- **azure-data-pipeline-with-adf-databricks-synapse/**
+  - **Datasets/**
+    - `AdventureWorks_Calendar.csv`
+    - `AdventureWorks_Customers.csv`
+    - `AdventureWorks_Product_Categories.csv`
+    - `AdventureWorks_Product_Subcategories.csv`
+    - `AdventureWorks_Products.csv`
+    - `AdventureWorks_Returns.csv`
+    - `AdventureWorks_Sales_2015.csv`
+    - `AdventureWorks_Sales_2016.csv`
+    - `AdventureWorks_Sales_2017.csv`
+    - `AdventureWorks_Territories.csv`
+  - **Scripts/**
+    - **ADF Pipelines/**
+      - `adf-dynamic-pipeline.json`
+      - `adf-static-pipeline.json`
+    - **Synapse Queries/**
+      - `create-external-table.sql`
+      - `create-gold-views.sql`
+      - `create-schema.sql`
+    - `DataBricks-Transformations.ipynb`
+    - `adf-dynamic-parameters.json`
+  - **Documentation/**
+    - `project_report.md`
+  - `README.md`
+
 
 ---
 
