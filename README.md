@@ -72,24 +72,22 @@ The project follows the **Medallion Architecture**, consisting of three layers:
 
 ## Project Structure
 
-azure-end-to-end-data-engineering-project/
-│
-├── datasets/
-│ └── *.csv # Sample dataset files
-│
-├── scripts/
-│ ├── adf_pipeline.json # ADF pipeline export
-│ ├── databricks_transformations.py
-│ ├── pyspark_cleaning_script.py
-│ └── synapse_queries.sql
-│
-├── architecture/
-│ └── project_architecture.png # Architecture diagram
-│
-├── documentation/
-│ └── project_report.md # Detailed project documentation
-│
-└── README.md
+## Project Structure
+
+- **azure-end-to-end-data-engineering-project/**
+  - **datasets/**
+    - `*.csv` — Sample dataset files
+  - **scripts/**
+    - `adf_pipeline.json` — Azure Data Factory pipeline export
+    - `databricks_transformations.py`
+    - `pyspark_cleaning_script.py`
+    - `synapse_queries.sql`
+  - **architecture/**
+    - `project_architecture.png` — Architecture diagram
+  - **documentation/**
+    - `project_report.md` — Detailed project documentation
+  - `README.md`
+
 
 ---
 
